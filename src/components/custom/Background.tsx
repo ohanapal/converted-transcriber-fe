@@ -63,7 +63,7 @@ export function Background() {
             } else {
                 throw new Error(result.error || "Failed to start process")
             }
-        } catch (error) {
+        } catch (error: any) {
             setStatus(`Error: ${error.message}`)
         } finally {
             setIsProcessing(false)
@@ -86,7 +86,7 @@ export function Background() {
             } else {
                 throw new Error(result.error || "Failed to stop process")
             }
-        } catch (error) {
+        } catch (error: any) {
             setStatus(`Error: ${error.message}`)
         } finally {
             setIsProcessing(false)
