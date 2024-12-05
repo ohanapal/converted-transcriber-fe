@@ -23,7 +23,7 @@ export function Background() {
     const [isRunning, setIsRunning] = useState(false)
     const [isDarkMode, setIsDarkMode] = useState(false)
 
-    const SERVER_URL = "http://localhost:5000" // Replace with your actual server URL
+    const SERVER_URL = "https://transcribe-python.ohanapal.bot/"
 
     useEffect(() => {
         if (isDarkMode) {
